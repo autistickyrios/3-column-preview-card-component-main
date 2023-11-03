@@ -1,0 +1,152 @@
+/* GLOBAL RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* UTILITIES */
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-1 {
+  background-color: hsl(31, 77%, 52%);
+}
+.card-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.card-3 {
+  background-color: hsl(179, 100%, 13%);
+}
+
+/* GENERAL STYLING */
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.container {
+  width: 82rem;
+  height: auto;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border-radius: 1rem;
+}
+
+.heading {
+  margin: 2rem 0;
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3rem;
+
+  color: hsl(0, 0%, 95%);
+}
+
+p {
+  margin-bottom: 6rem;
+}
+
+.card {
+  padding: 4rem;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: hsl(0, 0%, 95%);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 100vw;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  border: 1.2px solid hsl(0, 0%, 95%);
+}
+
+.card-1 a {
+  color: hsl(31, 77%, 52%);
+}
+.card-2 a {
+  color: hsl(184, 100%, 22%);
+}
+.card-3 a {
+  color: hsl(179, 100%, 13%);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 51.75em) {
+  main {
+    margin: 2rem;
+    height: 100%;
+  }
+  .container {
+    max-width: 40rem;
+    grid-template-columns: 1fr;
+  }
+}
